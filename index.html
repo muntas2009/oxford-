@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oxford International Grammar School</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="School Logo" class="logo" />
+        <h1>Oxford International Grammar School</h1>
+        <h2>অক্সফোর্ড ইন্টারন্যাশনাল গ্রামার স্কুল</h2>
+        <p class="motto">"না বুঝে মুখস্থ করলে মেধা বিকশিত হয়না"</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">সাহায্য</a></li>
+            <li><a href="#">স্কুল সম্পর্কে</a></li>
+            <li><a href="#">শিক্ষক</a></li>
+            <li><a href="#">মূল্যায়ন</a></li>
+            <li><a href="#">রুটিন</a></li>
+            <li><a href="#">আপডেট</a></li>
+            <li><a href="#">যোগাযোগ</a></li>
+            <li><a href="#">বেতন সম্পর্কিত</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>স্বাগতম!</h2>
+            <p>আমাদের স্কুল ওয়েবসাইটে আপনাকে স্বাগতম। এখানে আপনি নোটিশ, রুটিন, রেজাল্টসহ নানা তথ্য জানতে পারবেন।</p>
+        </section>
+        <div id="popup" class="popup">
+            📢 আজকের নোটিশ: আগামীকাল স্কুল বন্ধ থাকবে।
+            <button onclick="document.getElementById('popup').style.display='none'">বন্ধ করুন</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Oxford International Grammar School</p>
+    </footer>
+    <script>
+        window.onload = function () {
+            setTimeout(() => {
+                document.getElementById('popup').style.display = 'block';
+            }, 1000);
+        };
+    </script>
+</body>
+</html>
